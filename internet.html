@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Histoire de l'Internet</title>
+	<style>
+    	/* Estilos generales para la página */
+    	body {
+        	font-family: Arial, sans-serif;
+        	margin: 0;
+        	padding: 0;
+        	text-align: center;
+        	background-color: white; /* Fondo blanco */
+    	}
+   	 
+    	/* Título principal con tamaño grande */
+    	h1 {
+        	font-size: 68px;
+        	font-weight: bold;
+        	color: black; /* Texto negro */
+    	}
+   	 
+    	/* Contenedor de los botones en fila */
+    	.button-container {
+        	display: flex;
+        	justify-content: center;
+        	gap: 15px;
+        	margin-top: 20px;
+        	flex-wrap: wrap; /* Permite que los botones se ajusten si la pantalla es pequeña */
+    	}
+   	 
+    	/* Estilos de los botones azules */
+    	.button-blue {
+        	background-color: blue; /* Botones azules */
+        	color: white;
+        	padding: 10px 20px;
+        	border: none;
+        	border-radius: 10px;
+        	font-size: 1.2rem;
+        	cursor: pointer;
+        	transition: transform 0.2s, box-shadow 0.2s;
+    	}
+   	 
+    	/* Efecto al pasar el mouse sobre los botones azules */
+    	.button-blue:hover {
+        	transform: scale(1.1);
+        	box-shadow: 0 0 15px rgba(0, 0, 255, 0.7); /* Sombra azul */
+    	}
+   	 
+    	/* Efecto al hacer clic en los botones azules */
+    	.button-blue:active {
+        	transform: scale(1);
+        	box-shadow: none;
+    	}
+   	 
+    	/* Botón fijo en la esquina inferior derecha */
+    	.button-fixed {
+        	position: fixed;
+        	bottom: 20px;
+        	right: 20px;
+        	background-color: blue; /* Azul */
+        	color: white;
+        	padding: 10px 20px;
+        	border: none;
+        	border-radius: 20px;
+        	cursor: pointer;
+        	transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+        	text-decoration: none;
+        	display: inline-block;
+        	font-size: 1.2rem;
+    	}
+   	 
+    	/* Efecto al pasar el mouse sobre el botón fijo */
+    	.button-fixed:hover {
+        	transform: scale(1.1);
+        	box-shadow: 0 0 15px rgba(0, 0, 255, 0.7); /* Sombra azul */
+    	}
+   	 
+    	/* Efecto al hacer clic en el botón fijo */
+    	.button-fixed:active {
+        	transform: scale(1);
+        	box-shadow: none;
+    	}
+	</style>
+</head>
+<body>
+	<!-- Título principal de la página -->
+	<h1>Histoire de l'Internet</h1>
+    
+	<!-- Contenedor de los botones en fila -->
+	<div class="button-container">
+    	<button class="button-blue">Histoire de l'Internet</button>
+    	<button class="button-blue">Protocole TCP/IP</button>
+    	<button class="button-blue">DNS</button>
+    	<button class="button-blue">Routage</button>
+    	<button class="button-blue">Réseau pair à pair</button>
+    	<button class="button-blue">Conversion décimal à binaire</button>
+	</div>
+
+	<!-- Botón fijo en la esquina inferior derecha con hyperlink -->
+	<a href="https://samyceron1.github.io/menu" class="button-fixed">Menu</a>
+</body>
+</html>

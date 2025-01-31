@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Web</title>
+    <style>
+        /* Reset de márgenes y padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Fondo general */
+        body {
+            background-color: #fff; /* Fondo blanco */
+            color: #000; /* Texto negro por defecto */
+            font-family: 'Arial', sans-serif; /* Fuente limpia y sencilla */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Altura completa de la ventana */
+            margin: 0;
+        }
+
+        /* Contenedor del título */
+        .title-container {
+            background-color: blue; /* Rectángulo azul */
+            color: white; /* Texto blanco */
+            padding: 20px 40px; /* Espaciado alrededor del texto */
+            border-radius: 15px; /* Bordes redondeados */
+            text-align: center; /* Centrar el texto */
+            font-size: 2rem; /* Tamaño del texto */
+            font-weight: bold; /* Negrita para el título */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efectos interactivos */
+        }
+
+        /* Estilo del enlace */
+        a {
+            text-decoration: none; /* Quitar el subrayado */
+            color: white; /* El enlace es blanco */
+        }
+
+        /* Efecto interactivo: cambio de escala y sombra */
+        .title-container:hover {
+            transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+            box-shadow: 0 0 20px rgba(0, 0, 255, 0.7); /* Sombra azul */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Contenedor del título con enlace -->
+    <a href="https://samyceron1.github.io/menu" target="_blank"> <!-- Redirige a otra página -->
+        <div class="title-container">
+            ¡Bienvenue a mon site web!
+        </div>
+    </a>
+
+</body>
+</html>

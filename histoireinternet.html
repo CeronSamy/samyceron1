@@ -1,99 +1,129 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>L'Histoire d'Internet</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: white;
-            color: black;
-            margin: 20px;
-        }
-        h1 {
-            color: black;
-            text-align: center;
-            font-size: 48px;
-        }
-        .epoch {
-            background-color: blue;
-            color: white;
-            padding: 20px;
-            font-size: 24px;
-            font-weight: bold;
-            margin-top: 30px;
-            text-align: center;
-        }
-        .contenu {
-            max-width: 800px;
-            margin: auto;
-            padding: 20px;
-            border-left: 6px solid blue;
-        }
-
-        /* Bouton fixe en bas à droite */
-        .button-fixed {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: blue;
-            color: white;
-            padding: 12px 25px;
-            border: none;
-            border-radius: 30px;
-            cursor: pointer;
-            font-size: 1.2rem;
-            text-decoration: none;
-            transition: transform 0.2s, box-shadow 0.2s, background-color 0.3s;
-            display: inline-block;
-        }
-        .button-fixed:hover {
-            background-color: darkblue;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-        }
-        .button-fixed:active {
-            transform: scale(0.95);
-            box-shadow: none;
-        }
-    </style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Histoire de l'Internet</title>
+	<style>
+    	body {
+        	font-family: Arial, sans-serif;
+        	margin: 0;
+        	padding: 0;
+        	text-align: center;
+        	background-color: white;
+    	}
+    	
+    	h1 {
+        	font-size: 68px;
+        	font-weight: bold;
+        	color: black;
+    	}
+    
+    	.button-container {
+        	display: flex;
+        	justify-content: center;
+        	gap: 15px;
+        	margin-top: 20px;
+        	flex-wrap: wrap;
+    	}
+    
+    	.button-blue {
+        	background-color: blue;
+        	color: white;
+        	padding: 10px 20px;
+        	border: none;
+        	border-radius: 10px;
+        	font-size: 1.2rem;
+        	cursor: pointer;
+        	transition: transform 0.2s, box-shadow 0.2s;
+    	}
+    
+    	.button-blue:hover {
+        	transform: scale(1.1);
+        	box-shadow: 0 0 15px rgba(0, 0, 255, 0.7);
+    	}
+    
+    	.button-blue:active {
+        	transform: scale(1);
+        	box-shadow: none;
+    	}
+    
+    	.button-fixed {
+        	position: fixed;
+        	bottom: 20px;
+        	right: 20px;
+        	background-color: blue;
+        	color: white;
+        	padding: 10px 20px;
+        	border: none;
+        	border-radius: 20px;
+        	cursor: pointer;
+        	transition: transform 0.2s, box-shadow 0.2s;
+        	text-decoration: none;
+        	display: inline-block;
+        	font-size: 1.2rem;
+    	}
+    
+    	.button-fixed:hover {
+        	transform: scale(1.1);
+        	box-shadow: 0 0 15px rgba(0, 0, 255, 0.7);
+    	}
+    
+    	.button-fixed:active {
+        	transform: scale(1);
+        	box-shadow: none;
+    	}
+    
+    	.video-container {
+        	display: flex;
+        	justify-content: center;
+        	flex-wrap: wrap;
+        	gap: 20px;
+        	margin-top: 30px;
+    	}
+    
+    	video {
+        	width: 300px;
+        	height: auto;
+        	border-radius: 10px;
+        	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    	}
+	</style>
 </head>
 <body>
-    <h1>L'Histoire d'Internet</h1>
-    <div class="contenu">
-        <div class="epoch">Années 1950-1970 : Les débuts d'Internet</div>
-        <p><strong>1958 :</strong> Création de l'ARPA (Advanced Research Projects Agency) aux États-Unis.</p>
-        <p><strong>1962 :</strong> Paul Baran propose un réseau décentralisé pour la communication militaire.</p>
-        <p><strong>1969 :</strong> Naissance d’ARPANET, le précurseur d’Internet. Première connexion entre quatre universités américaines.</p>
-
-        <div class="epoch">Années 1970-1980 : Premiers protocoles et réseaux</div>
-        <p><strong>1971 :</strong> Envoi du premier e-mail par Ray Tomlinson.</p>
-        <p><strong>1973 :</strong> Création du protocole TCP/IP par Vinton Cerf et Robert Kahn.</p>
-        <p><strong>1983 :</strong> Adoption officielle de TCP/IP par ARPANET, marquant le début d'Internet.</p>
-        <p><strong>1984 :</strong> Création du DNS (Domain Name System), facilitant l’accès aux sites Web.</p>
-
-        <div class="epoch">Années 1990 : L’essor du Web et d’Internet</div>
-        <p><strong>1990 :</strong> Tim Berners-Lee invente le World Wide Web (WWW).</p>
-        <p><strong>1991 :</strong> Ouverture du Web au public.</p>
-        <p><strong>1993 :</strong> Apparition de Mosaic, premier navigateur Web graphique.</p>
-        <p><strong>1994 :</strong> Naissance d’Amazon et Yahoo!.</p>
-        <p><strong>1998 :</strong> Création de Google.</p>
-
-        <div class="epoch">Années 2000 : L’Internet 2.0 et les réseaux sociaux</div>
-        <p><strong>2001 :</strong> Lancement de Wikipédia.</p>
-        <p><strong>2004 :</strong> Création de Facebook.</p>
-        <p><strong>2005 :</strong> Naissance de YouTube.</p>
-        <p><strong>2006 :</strong> Création de Twitter.</p>
-        <p><strong>2007 :</strong> Lancement de l’iPhone, qui popularise l’Internet mobile.</p>
-
-        <div class="epoch">Années 2010 à aujourd’hui : Cloud, IA et Web 3.0</div>
-        <p><strong>2010 :</strong> Explosion des services Cloud (AWS, Google Cloud, etc.).</p>
-        <p><strong>2012 :</strong> Lancement d’Instagram et de la 4G.</p>
-        <p><strong>2015 :</strong> Popularisation des objets connectés et de l’IA.</p>
-        <p><strong>2021 :</strong> Développement du métavers et du Web3.</p>
+	<h1>Histoire de l'Internet</h1>
+    
+	<div class="button-container">
+        <a href="https://ceronsamy.github.io/samyceron1/histoireinternet" class="button-blue">Histoire de l'Internet</a>
+        <a href="https://ceronsamy.github.io/samyceron1/protocoletcpip" class="button-blue">Protocole TCP/IP</a>
+        <a href="https://ceronsamy.github.io/samyceron1/dns" class="button-blue">DNS</a>
+        <a href="https://ceronsamy.github.io/samyceron1/routage" class="button-blue">Routage</a>
+        <a href="https://ceronsamy.github.io/samyceron1/reseau" class="button-blue">Réseau pair à pair</a>
+        <a href="https://ceronsamy.github.io/samyceron1/conversion" class="button-blue">Conversion décimal à binaire</a>
     </div>
 
-    <!-- Bouton "Menu" en bas à droite -->
-    <a href="https://ceronsamy.github.io/samyceron1/internet" class="button-fixed">Menu</a>
+	<div class="video-container">
+        <video controls>
+            <source src="videos/video1.mp4" type="video/mp4">
+        </video>
+        <video controls>
+            <source src="videos/video2.mp4" type="video/mp4">
+        </video>
+        <video controls>
+            <source src="videos/video3.mp4" type="video/mp4">
+        </video>
+        <video controls>
+            <source src="videos/video4.mp4" type="video/mp4">
+        </video>
+        <video controls>
+            <source src="videos/video5.mp4" type="video/mp4">
+        </video>
+        <video controls>
+            <source src="videos/video6.mp4" type="video/mp4">
+        </video>
+    </div>
+
+	<a href="https://ceronsamy.github.io/samyceron1/menu" class="button-fixed">Menu</a>
 </body>
 </html>
+

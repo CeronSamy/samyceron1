@@ -5,30 +5,34 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Histoire de l'Internet</title>
 	<style>
+    	/* Estilos generales para la página */
     	body {
         	font-family: Arial, sans-serif;
         	margin: 0;
         	padding: 0;
         	text-align: center;
-        	background-color: white;
+        	background-color: white; /* Fondo blanco */
     	}
-    	
+   	 
+    	/* Título principal con tamaño grande */
     	h1 {
         	font-size: 68px;
         	font-weight: bold;
-        	color: black;
+        	color: black; /* Texto negro */
     	}
-    
+   	 
+    	/* Contenedor de los botones en fila */
     	.button-container {
         	display: flex;
         	justify-content: center;
         	gap: 15px;
         	margin-top: 20px;
-        	flex-wrap: wrap;
+        	flex-wrap: wrap; /* Permite que los botones se ajusten si la pantalla es pequeña */
     	}
-    
+   	 
+    	/* Estilos de los botones azules */
     	.button-blue {
-        	background-color: blue;
+        	background-color: blue; /* Botones azules */
         	color: white;
         	padding: 10px 20px;
         	border: none;
@@ -37,62 +41,54 @@
         	cursor: pointer;
         	transition: transform 0.2s, box-shadow 0.2s;
     	}
-    
+   	 
+    	/* Efecto al pasar el mouse sobre los botones azules */
     	.button-blue:hover {
         	transform: scale(1.1);
-        	box-shadow: 0 0 15px rgba(0, 0, 255, 0.7);
+        	box-shadow: 0 0 15px rgba(0, 0, 255, 0.7); /* Sombra azul */
     	}
-    
+   	 
+    	/* Efecto al hacer clic en los botones azules */
     	.button-blue:active {
         	transform: scale(1);
         	box-shadow: none;
     	}
-    
+   	 
+    	/* Botón fijo en la esquina inferior derecha */
     	.button-fixed {
         	position: fixed;
         	bottom: 20px;
         	right: 20px;
-        	background-color: blue;
+        	background-color: blue; /* Azul */
         	color: white;
         	padding: 10px 20px;
         	border: none;
         	border-radius: 20px;
         	cursor: pointer;
-        	transition: transform 0.2s, box-shadow 0.2s;
+        	transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
         	text-decoration: none;
         	display: inline-block;
         	font-size: 1.2rem;
     	}
-    
+   	 
+    	/* Efecto al pasar el mouse sobre el botón fijo */
     	.button-fixed:hover {
         	transform: scale(1.1);
-        	box-shadow: 0 0 15px rgba(0, 0, 255, 0.7);
+        	box-shadow: 0 0 15px rgba(0, 0, 255, 0.7); /* Sombra azul */
     	}
-    
+   	 
+    	/* Efecto al hacer clic en el botón fijo */
     	.button-fixed:active {
         	transform: scale(1);
         	box-shadow: none;
     	}
-    
-    	.video-container {
-        	display: flex;
-        	justify-content: center;
-        	flex-wrap: wrap;
-        	gap: 20px;
-        	margin-top: 30px;
-    	}
-    
-    	video {
-        	width: 300px;
-        	height: auto;
-        	border-radius: 10px;
-        	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    	}
 	</style>
 </head>
 <body>
+	<!-- Título principal de la página -->
 	<h1>Histoire de l'Internet</h1>
     
+	<!-- Contenedor de los botones en fila -->
 	<div class="button-container">
         <a href="https://ceronsamy.github.io/samyceron1/histoireinternet" class="button-blue">Histoire de l'Internet</a>
         <a href="https://ceronsamy.github.io/samyceron1/protocoletcpip" class="button-blue">Protocole TCP/IP</a>
@@ -102,27 +98,7 @@
         <a href="https://ceronsamy.github.io/samyceron1/conversion" class="button-blue">Conversion décimal à binaire</a>
     </div>
 
-	<div class="video-container">
-        <video controls>
-            <source src="videos/video1.mp4" type="video/mp4">
-        </video>
-        <video controls>
-            <source src="videos/video2.mp4" type="video/mp4">
-        </video>
-        <video controls>
-            <source src="videos/video3.mp4" type="video/mp4">
-        </video>
-        <video controls>
-            <source src="videos/video4.mp4" type="video/mp4">
-        </video>
-        <video controls>
-            <source src="videos/video5.mp4" type="video/mp4">
-        </video>
-        <video controls>
-            <source src="videos/video6.mp4" type="video/mp4">
-        </video>
-    </div>
-
+	<!-- Botón fijo en la esquina inferior derecha con hyperlink -->
 	<a href="https://ceronsamy.github.io/samyceron1/menu" class="button-fixed">Menu</a>
 </body>
 </html>
